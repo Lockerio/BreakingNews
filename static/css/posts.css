@@ -1,0 +1,33 @@
+:root {
+    --post-header: #42403E;
+    --background-color: #EBE2D8;
+    --background-post: #CCC0AF;
+    --border-color: #8F8A85;
+}
+
+#posts {
+    width: 70%;
+    right: 50%;
+    position: absolute;
+    transform: translate(50%);
+}
+
+.post {
+    margin: 30px;
+    border-radius: 14px;
+    /* border: 2px solid var(--border-color); */
+    background: var(--background-post);
+}
+
+.post_header {
+    padding: 8px 4px;
+}
+
+.post_footer{
+    padding: 6px 4px;
+}
+
+.post_link{
+    float: right;
+    padding-right: 8px;
+}

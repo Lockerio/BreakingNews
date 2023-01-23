@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Пост №{{ post.id }}</title>
+    <link rel="stylesheet" href="..\..\static\css\post.css">
+</head>
+<body>
+    <div id="main">
+        <p class="header_text">{{ post.header }}</p>
+        <div class="author">
+            <p class="author_name">{{ post.author }}</p>
+        </div>
+        <div id="post">
+            <p>{{ post.text }}</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+:root {
+    --My-Color-Theme-1-hex: #42403E;
+    --background-menu-bar: #EBDECE;
+    --background-color: #EBE2D8;
+    --button-color: #CCC0AF;
+    --button-color-hover: #8F8A85;
+}
+
+body {
+    background: var(--background-color);
+}
+
+#aside_menu{
+    height: 100vh;
+    width: 20%;    
+    padding: 5px;
+    position: fixed;
+
+    border-right: 2px solid #cfcbc6;
+}
+
+#main {
+    left: 20%;
+    margin-left: 15%;
+    width: 50%;
+    padding: 5px;
+    position: relative;
+}
+
+.menu_header {
+    padding: 5px;
+    display: flex;
+}
+
+.menu_header_text {
+    padding: 0 15px;
+    text-align: left;
+}
+
+.features_list {
+    padding: 15px 5px;
+    list-style-type: none;
+}
+
+.feature {
+    text-align: center;
+    background: var(--button-color);
+    border-radius: 4px;
+    margin: 5px 0;
+    height: 30px;
+    line-height: 30px;
+}
+
+.feature:hover {
+    background: var(--button-color-hover);
+}
+
+.feature_link {
+    text-decoration: none;
+    color: #000;
+}
+
+.picture {
+    width: 100%;
+}

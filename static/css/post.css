@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.1em;
+}
+
+:root {
+    --My-Color-Theme-1-hex: #42403E;
+    --background-post-color: #CCC0AF;
+    --background-color: #EBE2D8;
+    --button-color: #CCC0AF;
+    --button-color-hover: #8F8A85;
+}
+
+body {
+    background: var(--background-color);
+}
+
+#main {
+    position: absolute;
+    right: 50%;
+    transform: translate(50%);
+    width: 80%;
+    padding: 20px;
+    background: var(--background-post-color);
+    border-radius: 0 0 10px 10px;
+}
+
+.header_text {
+    font-size: 2em;
+}
+
+.author_name {
+    font-size: 1.4em;
+}
+
+#post {
+    margin-top: 15px;
+    padding: 5px;
+    background: var(--background-color);
+    border-radius: 10px;
+}

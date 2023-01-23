@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="..\..\static\css\main.css">
+    <link rel="stylesheet" href="..\..\static\css\posts.css">
+</head>
+<body>
+    <div id="aside_menu">
+        <div class="menu_header">
+            <img src="..\static\resources\Logo.jpg" alt="Logo" height="50px">
+            <span class="menu_header_text">Новостное агенство "Breaking News!"</span> 
+        </div>
+        <ul class="features_list">
+            <li class="feature">
+                <a href="#" class="feature_link">
+                    <div>UJK</div>
+                </a>
+            </li>
+            <li class="feature">
+                <a href="#" class="feature_link">
+                    <div>Умереть</div>
+                </a>
+            </li>
+            <li class="feature">
+                <a href="#" class="feature_link">
+                    <div>Добавить пост</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="main">
+        <div id="posts">
+            <ul>
+                {% for post in posts %}
+                <div class="post">
+                    <div class="post_header">
+                        {{ post.header }}
+                    </div>
+                    <div>
+                        <img class="picture" src="{{ post.picture }}" alt="Картинка">
+                    </div>
+                    <div class="post_footer">
+                        <span>Автор: {{ post.author }}</span>
+                        <a href="post/{{ post.id }}" class="post_link">Читать</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
