@@ -7,7 +7,7 @@ class DataWorker:
 
     @staticmethod
     def convert_json_to_data():
-        with open('C:/Users/Lockerio/PycharmProjects/NetWork/posts.json', 'r', encoding='utf-8') as file:
+        with open('posts.json', 'r', encoding='utf-8') as file:
             data = json.load(file,)
         return data
 

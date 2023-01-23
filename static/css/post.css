@@ -43,3 +43,18 @@ body {
     background: var(--background-color);
     border-radius: 10px;
 }
+
+.button_back {
+    position: absolute;
+    display: flex;
+    right: 0;
+    bottom: -45px;
+}
+
+.button_back_img {
+    width: 50px;
+}
+
+.button_back_text {
+    padding-top: 15px;
+}
