@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить пост</title>
+    <link rel="stylesheet" href="..\..\static\css\post.css">
+</head>
+<body>
+    <div id="main">
+        <form action="/added_post" method="post" enctype="multipart/form-data">
+            <p>Автор</p>
+            <input type="text" name="author_name">
+            <p>Заголовок</p>
+            <input type="text" name="header_text">
+            <p>Картинка</p>
+            <input type="file" name="picture">
+            <p>Текст статьи</p>
+            <textarea name="textarea"></textarea>
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+</body>
+</html>
