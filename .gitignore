@@ -1,5 +1,5 @@
-venv
+venv/
 basic.log
-__pycache__
-.idea
+__pycache__/
+.idea/
 .gitignore
