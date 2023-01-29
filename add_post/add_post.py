@@ -1,8 +1,10 @@
 from flask import render_template, Blueprint, request
 from utils import DataWorker
 
-add_post_blueprint = Blueprint('add_post_blueprint', __name__, template_folder='templates', static_folder='../static')
-added_post_blueprint = Blueprint('added_post_blueprint', __name__, template_folder='templates', static_folder='../static')
+add_post_blueprint = Blueprint('add_post_blueprint', __name__,
+                               template_folder='templates', static_folder='../static')
+added_post_blueprint = Blueprint('added_post_blueprint', __name__,
+                                 template_folder='templates', static_folder='../static')
 
 
 @add_post_blueprint.route('/add_post')
@@ -17,7 +19,7 @@ def added_post():
     picture = request.files.get("picture")
     text = request.form["textarea"]
 
-    DataWorker().convert_data_to_json(author, header, picture, text)
+    DataWorker().add_new_post(author, header, picture, text)
 
     return render_template('added_post.html')
 

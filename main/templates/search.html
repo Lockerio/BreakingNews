@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск</title>
+    <link rel="stylesheet" href="..\..\static\css\main.css">
+    <link rel="stylesheet" href="..\..\static\css\posts.css">
+</head>
+<body>
+    <div class="main">
+        <p>Найдено постов: {{ amount }}</p>
+        <div id="posts">
+            <ul>
+                {% for post in posts %}
+                <div class="post">
+                    <div class="post_header">
+                        {{ post.header }}
+                    </div>
+                    <div>
+                        <img class="picture" src="{{ post.picture }}" alt="Картинка">
+                    </div>
+                    <div class="post_footer">
+                        <span>Автор: {{ post.author }}</span>
+                        <a href="post/{{ post.id }}" class="post_link">Читать</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
