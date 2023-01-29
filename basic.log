@@ -1,0 +1,52 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 399-319-531
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:05] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:05] "[36mGET /static/resources/images/dog_got_oscar.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:05] "[36mGET /static/css/posts.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:05] "[36mGET /static/resources/images/SahaMakedonecPost.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:05] "[36mGET /static/resources/Logo.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:05] "[36mGET /static/resources/images/frozen_glass.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:05] "[36mGET /static/resources/images/UnluckyClown.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:05] "[36mGET /static/resources/images/XL.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:09] "GET /post/4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:09] "[36mGET /static/css/post.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:09] "[36mGET /static/resources/icons/Back.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:10] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:10] "[36mGET /static/css/posts.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:10] "[36mGET /static/resources/Logo.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:10] "[36mGET /static/resources/images/frozen_glass.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:10] "[36mGET /static/resources/images/XL.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:10] "[36mGET /static/resources/images/dog_got_oscar.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:10] "[36mGET /static/resources/images/SahaMakedonecPost.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:10] "[36mGET /static/resources/images/UnluckyClown.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:19] "GET /search?user_text=Что&button=Отправить HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:19] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:19] "[36mGET /static/css/posts.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:19] "[36mGET /static/resources/images/frozen_glass.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:22] "GET /post/0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:22] "[36mGET /static/css/post.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:22] "[36mGET /static/resources/icons/Back.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:24] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:24] "[36mGET /static/css/posts.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:24] "[36mGET /static/resources/Logo.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:24] "[36mGET /static/resources/images/dog_got_oscar.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:24] "[36mGET /static/resources/images/frozen_glass.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:24] "[36mGET /static/resources/images/SahaMakedonecPost.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:24] "[36mGET /static/resources/images/XL.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:24] "[36mGET /static/resources/images/UnluckyClown.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:27] "GET /add_post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:27] "[36mGET /static/css/post.css HTTP/1.1[0m" 304 -
+ERROR:root:У файла неправильное расширение
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:46] "POST /added_post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:46] "[36mGET /static/css/post.css HTTP/1.1[0m" 304 -
+ERROR:root:У файла неправильное расширение
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:49] "POST /added_post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Jan/2023 20:00:49] "[36mGET /static/css/post.css HTTP/1.1[0m" 304 -

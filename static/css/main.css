@@ -7,11 +7,12 @@
 }
 
 :root {
-    --My-Color-Theme-1-hex: #42403E;
     --background-menu-bar: #EBDECE;
     --background-color: #EBE2D8;
     --button-color: #CCC0AF;
     --button-color-hover: #8F8A85;
+    --button-search-color: #8F8A85;
+    --button-search-color-hover: #42403E;
 }
 
 body {
@@ -70,4 +71,23 @@ body {
 
 .picture {
     width: 100%;
+}
+
+.search_area {
+    border-radius: 5px;
+    background: var(--background-color);
+    border-width: 2px;
+    border: var(--button-color-hover);
+}
+
+.submit_button {
+    border-radius: 5px;
+    background: var(--button-search-color);
+    border-width: 2px;
+    border: var(--button-color-hover);
+    color: #fff;
+}
+
+.submit_button:hover {
+    background: var(--button-search-color-hover);
 }
