@@ -8,7 +8,7 @@ class DataWorker:
         Функция для чтения и перезаписи данных из JSON файла в переменную.
         :return: Список словарей постов.
         """
-        with open('posts.json', 'r', encoding='utf-8') as file:
+        with open('Data/posts.json', 'r', encoding='utf-8') as file:
             data = json.load(file)
         return data
 
@@ -25,7 +25,7 @@ class DataWorker:
         new_id = data[-1]["id"] + 1  # Вычисление нового id поста.
 
         picture_filename = picture.filename
-        picture_path = f"static/resources/images/{picture_filename}"
+        picture_path = f"static/resources/images/posts/{picture_filename}"
         picture.save(picture_path)
 
         data.append({
@@ -36,7 +36,7 @@ class DataWorker:
             "text": text
         })
 
-        with open('posts.json', 'w', encoding='utf-8') as outfile:
+        with open('Data/posts.json', 'w', encoding='utf-8') as outfile:
             json.dump(data, outfile, ensure_ascii=False, indent=4)
 
     def find_posts_headers_with_user_text(self, user_text):
