@@ -1,6 +1,7 @@
 [
     {
         "id": 0,
+        "author_id": 0,
         "author": "Стеклодув Валера",
         "header": "Что будет если заморозить стекло?",
         "picture": "static/resources/images/posts/frozen_glass.jpg",
@@ -8,6 +9,7 @@
     },
     {
         "id": 1,
+        "author_id": 1,
         "author": "Олег Араб",
         "header": "Крепыш, из щенячьего патруля, получит оскар за самый громкий лай в индустрии фильмов для взрослых детей!",
         "picture": "static/resources/images/posts/dog_got_oscar.jpg",
@@ -15,6 +17,7 @@
     },
     {
         "id": 2,
+        "author_id": 2,
         "author": "Олег Олегов Олегович",
         "header": "Улетный банан съел кокос",
         "picture": "static/resources/images/posts/XL.jpg",
@@ -22,6 +25,7 @@
     },
     {
         "id": 3,
+        "author_id": 3,
         "author": "Саша из Македонии",
         "header": "Щит сломался по дороге в Грецию",
         "picture": "static/resources/images/posts/SahaMakedonecPost.jpg",
@@ -29,6 +33,7 @@
     },
     {
         "id": 4,
+        "author_id": 4,
         "author": "Клоун неудачник",
         "header": "История одного клоуна",
         "picture": "static/resources/images/posts/UnluckyClown.jpg",

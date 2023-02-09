@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ profile.name }}</title>
+    <link rel="stylesheet" href="..\..\static\css\profile.css">
+</head>
+<body>
+    <header>
+        <div class="profile_photo_background">
+            <img class="profile_photo" src="../../{{ profile.photo }}" alt="Фото {{ profile.name }}">
+        </div>
+        <div class="profile_name">
+            <p>{{ profile.name }}</p>
+        </div>
+    </header>
+    <main>
+        {% for three_posts in grouped_posts %}
+            <div>
+                {% for post in three_posts %}
+                    <span>
+                        <img src="../../{{ post.picture }}" alt="{{ post.header }}">
+                    </span>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </main>
+</body>
+</html>

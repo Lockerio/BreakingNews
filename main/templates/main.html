@@ -15,7 +15,7 @@
         <ul class="features_list">
             <li class="feature" >
                 <form action="/search">
-                    <input type="text" class="search_area" name="user_text" value="Введите текст...">
+                    <input type="text" class="search_area" name="user_text">
                     <input type="submit" class="submit_button" name="button">
                 </form>
             </li>
@@ -38,7 +38,7 @@
                         <img class="picture" src="{{ post.picture }}" alt="Картинка">
                     </div>
                     <div class="post_footer">
-                        <span>Автор: {{ post.author }}</span>
+                        <span><a href="/profile/{{ post.author_id }}">Автор: {{ post.author }}</a></span>
                         <a href="post/{{ post.id }}" class="post_link">Читать</a>
                     </div>
                 </div>
