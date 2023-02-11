@@ -74,6 +74,7 @@ body {
 }
 
 .search_area {
+    width: 40%;
     border-radius: 5px;
     background: var(--background-color);
     border-width: 2px;

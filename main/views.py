@@ -17,15 +17,14 @@ def search():
 
 @main_page_blueprint.route('/post/<int:post_id>')
 def post_page(post_id):
-    data = MainDAO().get_posts()
-    post = data[post_id]
+    post = MainDAO().get_post_data_for_post_page(post_id)
     logging.info(f"Запрошена страничка поста с id {post_id}.")
     return render_template('post.html', post=post)
 
 
 @main_page_blueprint.route('/')
 def main_page():
-    data = MainDAO().get_posts()
+    data = MainDAO().get_posts_data_for_main_page()
     logging.info(f"Запрошена главная страничка.")
     return render_template('main.html', posts=data)
 

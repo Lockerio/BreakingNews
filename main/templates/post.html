@@ -20,6 +20,13 @@
                 <span class="button_back_text">Назад</span>
             </div>    
         </a>
+        <div id="tags">
+            <p>
+                {% for tag in post.tags %}
+                    {{ tag }}
+                {% endfor %}
+            </p>
+        </div>
     </div>
 </body>
 </html>
