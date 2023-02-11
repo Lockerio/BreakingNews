@@ -58,3 +58,11 @@ body {
 .button_back_text {
     padding-top: 15px;
 }
+
+#tags {
+    margin-top: 15px;
+    padding: 5px;
+    background: var(--background-color);
+    font-size: 0.8em;
+    border-radius: 10px;
+}

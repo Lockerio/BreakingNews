@@ -1,6 +1,7 @@
 from flask import render_template, Blueprint, request
-from utils import DataWorker
+from add_post.dao.add_post_dao import AddPostDAO
 import logging
+
 
 add_post_blueprint = Blueprint('add_post_blueprint', __name__,
                                template_folder='templates', static_folder='../static')
@@ -17,6 +18,7 @@ def added_post():
     extensions = ["jpg", "jpeg", "png"]
 
     author = request.form["author_name"]
+    author_id = request.form["author_id"]
     header = request.form["header_text"]
     picture = request.files.get("picture")
     text = request.form["textarea"]
@@ -30,7 +32,7 @@ def added_post():
         logging.error("Заполнены не все поля")
         return render_template('add_post.html')
 
-    DataWorker().add_new_post(author, header, picture, text)
+    AddPostDAO().add_new_post(author, author_id, header, picture, text)
     logging.info("Запрошена страничка добавленного поста")
     return render_template('added_post.html')
 

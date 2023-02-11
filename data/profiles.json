@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "name": "Стеклодув Валера",
+    "photo": "static/resources/images/profile/Stekloduv.jpg",
+    "posts": [0, 5, 6, 7, 8]
+  },
+  {
+    "id": 1,
+    "name": "Олег Араб",
+    "photo": "static/resources/images/profile/Oleg_Arab.jpg",
+    "posts": [1]
+  },
+  {
+    "id": 2,
+    "name": "Олег Олегов Олегович",
+    "photo": "static/resources/images/profile/Olejajpg.jpg",
+    "posts": [2]
+  },
+  {
+    "id": 3,
+    "name": "Саша из Македонии",
+    "photo": "static/resources/images/profile/Makedonec.jpg",
+    "posts": [3]
+  },
+  {
+    "id": 4,
+    "name": "Клоун неудачник",
+    "photo": "static/resources/images/profile/Clown.jpg",
+    "posts": [4]
+  }
+]

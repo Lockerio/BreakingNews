@@ -15,7 +15,7 @@
         <ul class="features_list">
             <li class="feature" >
                 <form action="/search">
-                    <input type="text" class="search_area" name="user_text" value="Введите текст...">
+                    <input type="text" class="search_area" name="user_text">
                     <input type="submit" class="submit_button" name="button">
                 </form>
             </li>
@@ -25,6 +25,12 @@
                 </a>
             </li>
         </ul>
+        <div>
+            <p style="margin: 5px; position: absolute; bottom: 2vh;">
+                Все картинки для постов и фото в профилях были выполнены нейросетью 
+                <a target="_blank" href="https://rudalle.ru/kandinsky2">Kandinsky 2.0</a>
+            </p>
+        </div>
     </div>
     <div id="main">
         <div id="posts">
@@ -38,7 +44,7 @@
                         <img class="picture" src="{{ post.picture }}" alt="Картинка">
                     </div>
                     <div class="post_footer">
-                        <span>Автор: {{ post.author }}</span>
+                        <span>Автор: <a href="/profile/{{ post.author_id }}">{{ post.author }}</a></span>
                         <a href="post/{{ post.id }}" class="post_link">Читать</a>
                     </div>
                 </div>
