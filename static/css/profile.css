@@ -11,7 +11,7 @@
     --header-background: #6e6154;
     --photo-background: #453d34;
     --background-color: #EBE2D8;
-    --background-post: #CCC0AF;
+    --background-main: #CCC0AF;
     --border-color: #8F8A85;
 }
 
@@ -49,4 +49,23 @@ header {
     bottom: -100px;
     position: absolute;
     margin: 100px;
+}
+
+main {
+    margin: 170px 15vh;
+}
+
+.post {
+    height: 30%;
+    width: 30%;
+    padding: 1.5%;
+}
+
+.post-preview {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.line_of_posts {
+    display: flex;
 }

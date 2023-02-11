@@ -16,11 +16,13 @@
     </header>
     <main>
         {% for three_posts in grouped_posts %}
-            <div>
+            <div class="line_of_posts">
                 {% for post in three_posts %}
-                    <span>
-                        <img src="../../{{ post.picture }}" alt="{{ post.header }}">
-                    </span>
+                    <div class="post">
+                        <a href="/post/{{ post.id }}">
+                            <img class="post-preview" src="../../{{ post.picture }}" alt="{{ post.header }}">
+                        </a>
+                    </div>
                 {% endfor %}
             </div>
         {% endfor %}
